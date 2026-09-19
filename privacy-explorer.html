@@ -29,25 +29,32 @@
 <body>
 
 <h1>홀린 듯 개인정보처리방침</h1>
-<p class="updated">최종 업데이트: 2026년 9월 18일</p>
+<p class="updated">최종 업데이트: 2026년 9월 19일</p>
 
 <div class="lead">
-  <strong>요약</strong> — 이 앱은 회원가입도, 로그인도 없습니다. 탐험 기록·사진·위치는 모두 여러분의 기기 안에만 저장되며 개발자의 서버로 전송되지 않습니다. 개발자는 여러분의 데이터를 볼 수 없습니다.
+  <strong>요약</strong> — 이 앱은 회원가입도, 로그인도 없습니다. 산책 기록·사진·위치는 모두 여러분의 기기 안에만 저장되며 개발자의 서버로 전송되지 않습니다. 개발자는 여러분의 데이터를 볼 수 없습니다. 걷는 길을 계산할 때만 출발지와 목적지 좌표가 경로 서비스(openrouteservice)로 전달됩니다.
 </div>
 
 <h2>1. 위치 정보</h2>
-<p>홀린 듯("본 앱", 영문명 Wanderlure)은 현재 위치를 기준으로 무작위 목적지를 만들고, 목적지까지 남은 거리와 방향을 실시간으로 보여주기 위해 위치 정보를 사용합니다. 위치는 앱이 실행 중일 때만(While Using the App) 사용되며, 백그라운드에서는 수집하지 않습니다.</p>
-<p>탐험 기록을 저장하면 그 지점의 좌표가 기록과 함께 저장되지만, <strong>이는 여러분의 기기 안에만 저장</strong>되며 개발자의 서버로 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
+<p>홀린 듯("본 앱", 영문명 Wanderlure)은 현재 위치를 기준으로 무작위 목적지를 만들고, 목적지까지 남은 거리와 방향을 실시간으로 보여주기 위해 위치 정보를 사용합니다. 위치 권한은 "앱을 사용하는 동안"만 요청합니다. 다만 사용자가 산책을 시작한 뒤 도착하거나 산책을 마칠 때까지는, 폰을 주머니에 넣어 화면이 꺼져 있어도 중간 지점 안내를 이어가기 위해 위치를 계속 사용합니다(이때 화면 상단에 위치 사용 표시가 나타납니다). 산책 중이 아닐 때는 위치를 사용하지 않습니다.</p>
+<p>중간 지점 도착 등의 안내는 기기 안에서 만들어지는 <strong>로컬 알림</strong>과 잠금화면 표시(실시간 현황)로 전달되며, 서버를 거치지 않습니다.</p>
+<p>산책 중 발견한 곳을 저장하면 그 지점의 좌표가 기록과 함께 저장되지만, <strong>이는 여러분의 기기 안에만 저장</strong>되며 개발자의 서버로 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
 <p>위치 권한은 언제든지 기기 설정에서 해제할 수 있습니다. 다만 위치 없이는 목적지 생성과 거리 안내라는 앱의 핵심 기능이 동작하지 않습니다.</p>
 
 <h2>2. 카메라 및 사진</h2>
-<p>탐험 중 발견한 장소를 기록할 때 사진을 촬영하거나 선택할 수 있습니다. 이 사진은 <strong>여러분의 기기 안에만 저장</strong>되며, 개발자의 서버나 제3자에게 전송되지 않습니다. 사진 촬영은 선택 사항이며, 사진 없이도 기록을 남길 수 있습니다.</p>
+<p>산책 중 발견한 장소를 기록할 때 사진을 촬영하거나 선택할 수 있습니다. 이 사진은 <strong>여러분의 기기 안에만 저장</strong>되며, 개발자의 서버나 제3자에게 전송되지 않습니다. 사진 촬영은 선택 사항이며, 사진 없이도 기록을 남길 수 있습니다.</p>
 
 <h2>3. 지도 (OpenStreetMap)</h2>
 <p>본 앱은 지도 화면을 그리기 위해 OpenStreetMap의 지도 타일 서버에서 이미지를 내려받습니다. 이 과정에서 여러분이 보고 있는 지도 영역의 좌표와 IP 주소가 해당 서버로 전달됩니다. 이는 지도를 표시하기 위한 기술적 통신이며, 개발자는 이 정보를 수집하거나 저장하지 않습니다. 자세한 내용은 <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Foundation 개인정보처리방침</a>을 참고해 주세요.</p>
 
-<h2>4. 광고 (Google AdMob)</h2>
-<p>본 앱은 무료로 제공되며, 현재 버전에는 광고가 표시되지 않습니다. 향후 광고를 도입하는 경우 사용자가 원할 때 직접 선택해서 보는 방식으로만 제공하며, 탐험 중에는 표시하지 않습니다.</p>
+<h2>4. 도보 경로 계산 (openrouteservice)</h2>
+<p>실제로 걷게 될 길의 거리와 중간 지점을 정하기 위해, 산책 소개 화면에서 <strong>출발지와 목적지 좌표(소수점 5자리)</strong>를 openrouteservice(운영: HeiGIT gGmbH, 독일)로 보냅니다. 이 좌표는 경로를 계산하는 데에만 쓰이며, 개발자는 이 정보를 받거나 저장하지 않습니다. 이름·기기 식별자 등 다른 정보는 함께 보내지 않습니다. 자세한 내용은 <a href="https://heigit.org/privacy-policy/" target="_blank" rel="noopener">HeiGIT 개인정보처리방침</a>을 참고해 주세요.</p>
+
+<h2>5. 산책 카드 공유</h2>
+<p>산책을 마친 뒤 원하시면 "오늘의 산책 카드" 이미지를 만들어 아이폰 공유 기능으로 보낼 수 있습니다. 카드는 기기 안에서 새로 그려지며, 사진 속 위치 정보(EXIF)는 포함되지 않습니다. 지도·좌표·출발지는 카드에 넣지 않으며, "동네 표시"를 켠 경우에만 시·구 단위 지역 이름이 표시됩니다(지역 이름은 Apple의 위치 변환 기능으로 확인합니다). 카드를 누구에게 보낼지는 전적으로 사용자가 선택하며, 개발자는 공유 내용을 받지 않습니다.</p>
+
+<h2>6. 광고 (Google AdMob)</h2>
+<p>본 앱은 무료로 제공되며, 현재 버전에는 광고가 표시되지 않습니다. 향후 광고를 도입하는 경우 사용자가 원할 때 직접 선택해서 보는 방식으로만 제공하며, 산책 중에는 표시하지 않습니다.</p>
 <p>광고 제공을 위해 Google AdMob을 사용하며, AdMob은 광고를 노출하고 성과를 측정하기 위해 아래 정보를 처리할 수 있습니다.</p>
 <table>
   <tr><th>항목</th><th>용도</th></tr>
@@ -58,33 +65,34 @@
 </table>
 <p>본 앱은 App Tracking Transparency(ATT) 권한을 요청하지 않으므로, iOS에서 광고 식별자(IDFA)에 접근하지 않습니다. 따라서 <strong>개인 맞춤형 광고가 아닌 일반 광고만 표시</strong>됩니다. 자세한 내용은 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a>을 참고해 주세요.</p>
 
-<h2>5. 수집하지 않는 정보</h2>
+<h2>7. 수집하지 않는 정보</h2>
 <p>본 앱은 이름, 이메일, 전화번호, 생년월일 등 개인을 식별할 수 있는 정보를 일절 수집하지 않습니다. 회원 계정 시스템이 없으며, 개발자가 운영하는 서버도 없습니다. 여러분이 남긴 장소 이름과 감상문은 기기 안에만 저장됩니다.</p>
 
-<h2>6. 아동의 개인정보</h2>
+<h2>8. 아동의 개인정보</h2>
 <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
 
-<h2>7. 안전에 관한 안내</h2>
-<p>본 앱은 좌표를 무작위로 생성하므로 접근이 어렵거나 안전하지 않은 장소가 목적지로 제시될 수 있습니다. 탐험 중에는 반드시 주변 교통 상황과 안전에 유의하시고, 출입이 제한된 장소에는 들어가지 마십시오. 이용자의 판단과 행동에 따른 결과에 대해 개발자는 책임지지 않습니다.</p>
+<h2>9. 안전에 관한 안내</h2>
+<p>본 앱은 좌표를 무작위로 생성하므로 접근이 어렵거나 안전하지 않은 장소가 목적지로 제시될 수 있습니다. 산책 중에는 반드시 주변 교통 상황과 안전에 유의하시고, 출입이 제한된 장소에는 들어가지 마십시오. 이용자의 판단과 행동에 따른 결과에 대해 개발자는 책임지지 않습니다.</p>
 
-<h2>8. 방침 변경</h2>
+<h2>10. 방침 변경</h2>
 <p>본 방침이 변경될 경우 이 페이지에 갱신된 내용과 날짜를 게시합니다.</p>
 
-<h2>9. 문의</h2>
+<h2>11. 문의</h2>
 <p>본 개인정보처리방침에 대한 문의사항은 <a href="mailto:archevision@gmail.com">archevision@gmail.com</a>으로 연락해 주세요.</p>
 
 <hr class="lang-divider">
 
 <h1>Wanderlure Privacy Policy</h1>
-<p class="updated">Last updated: September 18, 2026</p>
+<p class="updated">Last updated: September 19, 2026</p>
 
 <div class="lead">
-  <strong>In short</strong> — This app has no sign-up and no login. Your exploration records, photos and locations are stored only on your device and are never sent to the developer's servers. The developer cannot see your data.
+  <strong>In short</strong> — This app has no sign-up and no login. Your walk records, photos and locations are stored only on your device and are never sent to the developer's servers. The developer cannot see your data. Only when calculating the walking route are the start and destination coordinates sent to a routing service (openrouteservice).
 </div>
 
 <h2>1. Location</h2>
-<p>Wanderlure ("the App", Korean name 홀린 듯) uses your location to generate a random destination near you and to show the remaining distance and bearing to it in real time. Location is used only while the app is in use; it is never collected in the background.</p>
-<p>When you save an exploration record, the coordinates of that spot are stored alongside it, but <strong>only on your device</strong>. They are never uploaded to any server and are deleted when you delete the app.</p>
+<p>Wanderlure ("the App", Korean name 홀린 듯) uses your location to generate a random destination near you and to show the remaining distance and bearing to it in real time. The App only asks for "While Using the App" permission. After you start a walk and until you arrive or end it, location keeps being used even with the screen off (phone in your pocket) so checkpoint guidance can continue; iOS shows a location indicator while this happens. Location is not used when you are not on a walk.</p>
+<p>Guidance such as reaching a checkpoint is delivered through <strong>local notifications</strong> generated on your device and a lock-screen Live Activity; no server is involved.</p>
+<p>When you save a place you found, the coordinates of that spot are stored alongside it, but <strong>only on your device</strong>. They are never uploaded to any server and are deleted when you delete the app.</p>
 <p>You can revoke the location permission at any time in your device settings. Without it, the core features — destination generation and distance guidance — cannot work.</p>
 
 <h2>2. Camera and Photos</h2>
@@ -93,7 +101,13 @@
 <h2>3. Maps (OpenStreetMap)</h2>
 <p>The App downloads map tiles from OpenStreetMap's tile servers to draw the map. In doing so, the coordinates of the map area you are viewing and your IP address are sent to those servers. This is technical communication required to display a map; the developer does not collect or store this information. See the <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Foundation Privacy Policy</a> for details.</p>
 
-<h2>4. Advertising (Google AdMob)</h2>
+<h2>4. Walking Route Calculation (openrouteservice)</h2>
+<p>To determine the real walking distance and checkpoints, the <strong>start and destination coordinates (rounded to 5 decimals)</strong> are sent to openrouteservice (operated by HeiGIT gGmbH, Germany) on the walk introduction screen. They are used only to compute the route; the developer does not receive or store them, and no name or device identifier is sent. See the <a href="https://heigit.org/privacy-policy/" target="_blank" rel="noopener">HeiGIT Privacy Policy</a>.</p>
+
+<h2>5. Sharing a Walk Card</h2>
+<p>After a walk you may create a "walk card" image and send it through the iOS share sheet. The card is drawn on your device and contains no photo location metadata (EXIF), no map, coordinates or starting point. Only if you turn on "Show area" is a city/district name shown (looked up with Apple's geocoding). You alone choose where to share it; the developer does not receive it.</p>
+
+<h2>6. Advertising (Google AdMob)</h2>
 <p>The App is free, and the current version shows no ads. If ads are introduced in the future, they will only be shown when you choose to watch them, and never while you are walking.</p>
 <p>Google AdMob is used to serve these ads and may process the following in order to deliver and measure them:</p>
 <table>
@@ -105,19 +119,19 @@
 </table>
 <p>The App does not request App Tracking Transparency (ATT) permission and therefore does not access the iOS advertising identifier (IDFA). As a result, <strong>only non-personalized ads are shown</strong>. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's Ads Policy</a> for details.</p>
 
-<h2>5. Information We Do Not Collect</h2>
+<h2>7. Information We Do Not Collect</h2>
 <p>The App collects no personally identifiable information whatsoever — no name, email, phone number or date of birth. There is no account system and no developer-operated server. The place names and notes you write stay on your device.</p>
 
-<h2>6. Children's Privacy</h2>
+<h2>8. Children's Privacy</h2>
 <p>The App is not directed to children under 14 and does not knowingly collect personal information from them.</p>
 
-<h2>7. Safety Notice</h2>
-<p>Because destinations are generated from random coordinates, a suggested destination may be hard to reach or unsafe. Please stay aware of traffic and your surroundings while exploring, and do not enter restricted areas. The developer is not responsible for outcomes arising from your own judgment and actions.</p>
+<h2>9. Safety Notice</h2>
+<p>Because destinations are generated from random coordinates, a suggested destination may be hard to reach or unsafe. Please stay aware of traffic and your surroundings while walking, and do not enter restricted areas. The developer is not responsible for outcomes arising from your own judgment and actions.</p>
 
-<h2>8. Changes to This Policy</h2>
+<h2>10. Changes to This Policy</h2>
 <p>If this policy changes, the updated text and date will be posted on this page.</p>
 
-<h2>9. Contact</h2>
+<h2>11. Contact</h2>
 <p>Questions about this policy can be sent to <a href="mailto:archevision@gmail.com">archevision@gmail.com</a>.</p>
 
 </body>
